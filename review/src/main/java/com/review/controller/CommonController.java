@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CommonController {
 
 	
-    @RequestMapping("/index.html")
+    @RequestMapping("/index.do")
     public String index(@RequestParam Map map ,Model model, HttpServletRequest req, HttpServletRequest res){
+    	System.out.println("인덱스이동");
     	return "index";
     }
+
+    
     
 }
